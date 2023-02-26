@@ -17,11 +17,13 @@ public class Allpages {
 
     public Allpages(){
 
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver(), Duration.ofSeconds(15)),this);
+        PageFactory.initElements(Driver.getAppiumDriver(),this);
 
     }
     @FindBy(xpath = "//button[@id='didomi-notice-agree-button']")
     public WebElement cookie;
+    @FindBy(xpath = "//*[@class='allfont allfont-perso']")
+    public WebElement singIn;
 
 
 

@@ -33,7 +33,7 @@ public class Driver {
               //caps.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivity");
               caps.setCapability("browserName", "chrome");
               caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,"70000");
-              caps.setCapability("chromedriverExecutable","C:\\Users\\hakan\\IdeaProjects\\ma\\src\\test\\java\\Driver\\chromedriver.exe");
+              caps.setCapability("chromedriverExecutable",ConfigReader.getProperty("path"));
               //caps.setCapability(MobileCapabilityType.NO_RESET,true);
 
 
